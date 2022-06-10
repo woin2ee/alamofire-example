@@ -16,11 +16,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func updateJoke(_ sender: UIButton) {
-        AF.request("http://api.icndb.com/jokes/random").responseDecodable(of: JokeResponseDTO.self) { response in
-//            self.printToConsole(response)
-            
-            self.lblJoke.text = response.value?.joke.content
-        }
+        AF.request("http://api.icndb.com/jokes/random")
+            .validate()
+            .responseDecodable(of: JokeResponseDTO.self) { response in
+//                self.printToConsole(response)
+                
+                self.lblJoke.text = response.value?.joke.content
+            }
     }
     
     func printToConsole<T>(_ response: DataResponse<T, AFError>) {
