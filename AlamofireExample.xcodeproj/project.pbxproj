@@ -19,6 +19,7 @@
 		E83896B6285196A700E1719C /* AlamofireExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896B5285196A700E1719C /* AlamofireExampleTests.swift */; };
 		E83896C0285196A700E1719C /* AlamofireExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896BF285196A700E1719C /* AlamofireExampleUITests.swift */; };
 		E83896C2285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */; };
+		E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E83896BB285196A700E1719C /* AlamofireExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83896BF285196A700E1719C /* AlamofireExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleUITests.swift; sourceTree = "<group>"; };
 		E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponseDTO.swift; sourceTree = "<group>"; };
 		ED736D8BE09192BDB8FB2F7B /* Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-AlamofireExample-AlamofireExampleUITests/Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB4E7D8F686499A399756CDA /* Pods_AlamofireExample_AlamofireExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireExample_AlamofireExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,7 +103,6 @@
 				2FF51D6781515A2E9BAA8C6F /* Pods-AlamofireExampleTests.debug.xcconfig */,
 				E518ED375E9A059392B9C6D2 /* Pods-AlamofireExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +144,7 @@
 				E838969E285196A500E1719C /* AppDelegate.swift */,
 				E83896A0285196A500E1719C /* SceneDelegate.swift */,
 				E83896A2285196A500E1719C /* ViewController.swift */,
+				E85A55E728531D62007FB2AD /* Data */,
 				E83896A4285196A500E1719C /* Main.storyboard */,
 				E83896A7285196A700E1719C /* Assets.xcassets */,
 				E83896A9285196A700E1719C /* LaunchScreen.storyboard */,
@@ -166,6 +168,14 @@
 				E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */,
 			);
 			path = AlamofireExampleUITests;
+			sourceTree = "<group>";
+		};
+		E85A55E728531D62007FB2AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +420,7 @@
 				E83896A3285196A500E1719C /* ViewController.swift in Sources */,
 				E838969F285196A500E1719C /* AppDelegate.swift in Sources */,
 				E83896A1285196A500E1719C /* SceneDelegate.swift in Sources */,
+				E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
