@@ -12,8 +12,8 @@
 		D03A28585CA86B1FEA1EB954 /* Pods_AlamofireExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54910DFFF2F5C2DCBF4BE2A /* Pods_AlamofireExampleTests.framework */; };
 		E838969F285196A500E1719C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838969E285196A500E1719C /* AppDelegate.swift */; };
 		E83896A1285196A500E1719C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896A0285196A500E1719C /* SceneDelegate.swift */; };
-		E83896A3285196A500E1719C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896A2285196A500E1719C /* ViewController.swift */; };
-		E83896A6285196A500E1719C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83896A4285196A500E1719C /* Main.storyboard */; };
+		E83896A3285196A500E1719C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896A2285196A500E1719C /* HomeViewController.swift */; };
+		E83896A6285196A500E1719C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83896A4285196A500E1719C /* Home.storyboard */; };
 		E83896A8285196A700E1719C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83896A7285196A700E1719C /* Assets.xcassets */; };
 		E83896AB285196A700E1719C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83896A9285196A700E1719C /* LaunchScreen.storyboard */; };
 		E83896B6285196A700E1719C /* AlamofireExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896B5285196A700E1719C /* AlamofireExampleTests.swift */; };
@@ -50,8 +50,8 @@
 		E838969B285196A500E1719C /* AlamofireExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E838969E285196A500E1719C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E83896A0285196A500E1719C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E83896A2285196A500E1719C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E83896A5285196A500E1719C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E83896A2285196A500E1719C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E83896A5285196A500E1719C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E83896A7285196A700E1719C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83896AA285196A700E1719C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83896AC285196A700E1719C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,13 +141,10 @@
 		E838969D285196A500E1719C /* AlamofireExample */ = {
 			isa = PBXGroup;
 			children = (
-				E838969E285196A500E1719C /* AppDelegate.swift */,
-				E83896A0285196A500E1719C /* SceneDelegate.swift */,
-				E83896A2285196A500E1719C /* ViewController.swift */,
+				E85A55E8285336F9007FB2AD /* Application */,
+				E85A55E92853370E007FB2AD /* Presentation */,
 				E85A55E728531D62007FB2AD /* Data */,
-				E83896A4285196A500E1719C /* Main.storyboard */,
-				E83896A7285196A700E1719C /* Assets.xcassets */,
-				E83896A9285196A700E1719C /* LaunchScreen.storyboard */,
+				E85A55EB28534D2F007FB2AD /* Resource */,
 				E83896AC285196A700E1719C /* Info.plist */,
 			);
 			path = AlamofireExample;
@@ -176,6 +173,41 @@
 				E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E85A55E8285336F9007FB2AD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E838969E285196A500E1719C /* AppDelegate.swift */,
+				E83896A0285196A500E1719C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E85A55E92853370E007FB2AD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E85A55EA28533716007FB2AD /* HomeScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E85A55EA28533716007FB2AD /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				E83896A2285196A500E1719C /* HomeViewController.swift */,
+				E83896A4285196A500E1719C /* Home.storyboard */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		E85A55EB28534D2F007FB2AD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E83896A7285196A700E1719C /* Assets.xcassets */,
+				E83896A9285196A700E1719C /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +321,7 @@
 			files = (
 				E83896AB285196A700E1719C /* LaunchScreen.storyboard in Resources */,
 				E83896A8285196A700E1719C /* Assets.xcassets in Resources */,
-				E83896A6285196A500E1719C /* Main.storyboard in Resources */,
+				E83896A6285196A500E1719C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E83896A3285196A500E1719C /* ViewController.swift in Sources */,
+				E83896A3285196A500E1719C /* HomeViewController.swift in Sources */,
 				E838969F285196A500E1719C /* AppDelegate.swift in Sources */,
 				E83896A1285196A500E1719C /* SceneDelegate.swift in Sources */,
 				E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */,
@@ -457,12 +489,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E83896A4285196A500E1719C /* Main.storyboard */ = {
+		E83896A4285196A500E1719C /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E83896A5285196A500E1719C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		E83896A9285196A700E1719C /* LaunchScreen.storyboard */ = {
@@ -603,7 +635,7 @@
 				INFOPLIST_FILE = AlamofireExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -634,7 +666,7 @@
 				INFOPLIST_FILE = AlamofireExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

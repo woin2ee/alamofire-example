@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AlamofireExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4s-Yc-0tQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vw9-bL-rfo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chuck Norris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SY-ji-UZN">
+                                                <rect key="frame" x="55" y="10" width="304" height="66"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-3v-pN9">
+                                                <rect key="frame" x="149" y="126" width="116" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Random Joke!"/>
+                                                <connections>
+                                                    <action selector="updateJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbf-Wx-DPH"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twu-im-ggI">
+                                                <rect key="frame" x="20" y="187" width="374" height="251"/>
+                                                <string key="text">Chuck Norris doesn’t get up in the morning, put on his boots, and get ready for work; he gets up expecting his boots to already be on while his work gets ready for him!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="9SY-ji-UZN" firstAttribute="top" secondItem="Vw9-bL-rfo" secondAttribute="top" constant="10" id="EUu-Qw-Qxe"/>
+                                            <constraint firstItem="twu-im-ggI" firstAttribute="top" secondItem="Eeh-3v-pN9" secondAttribute="bottom" constant="30" id="IwF-mo-PHQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="twu-im-ggI" secondAttribute="bottom" constant="10" id="RQG-LL-PxH"/>
+                                            <constraint firstItem="twu-im-ggI" firstAttribute="leading" secondItem="Vw9-bL-rfo" secondAttribute="leading" constant="20" id="Uef-X2-CcF"/>
+                                            <constraint firstItem="Eeh-3v-pN9" firstAttribute="centerX" secondItem="Vw9-bL-rfo" secondAttribute="centerX" id="Ujn-kH-aK9"/>
+                                            <constraint firstItem="twu-im-ggI" firstAttribute="centerX" secondItem="Vw9-bL-rfo" secondAttribute="centerX" id="YY1-zm-tio"/>
+                                            <constraint firstItem="9SY-ji-UZN" firstAttribute="centerX" secondItem="Vw9-bL-rfo" secondAttribute="centerX" id="nPh-4J-5xr"/>
+                                            <constraint firstItem="Eeh-3v-pN9" firstAttribute="top" secondItem="9SY-ji-UZN" secondAttribute="bottom" constant="50" id="yga-bj-mmc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vw9-bL-rfo" firstAttribute="trailing" secondItem="1To-G9-EIl" secondAttribute="trailing" id="1U3-dl-OQ7"/>
+                                    <constraint firstItem="qLT-Pt-oIg" firstAttribute="trailing" secondItem="Vw9-bL-rfo" secondAttribute="trailing" id="Jw2-Tk-OVG"/>
+                                    <constraint firstItem="Vw9-bL-rfo" firstAttribute="bottom" secondItem="1To-G9-EIl" secondAttribute="bottom" id="RDN-Mb-kzC"/>
+                                    <constraint firstItem="Vw9-bL-rfo" firstAttribute="leading" secondItem="qLT-Pt-oIg" secondAttribute="leading" id="Rwc-9G-fHK"/>
+                                    <constraint firstItem="Vw9-bL-rfo" firstAttribute="leading" secondItem="1To-G9-EIl" secondAttribute="leading" id="Tfj-Aj-n7V"/>
+                                    <constraint firstItem="Vw9-bL-rfo" firstAttribute="top" secondItem="1To-G9-EIl" secondAttribute="top" id="bmo-rX-RGe"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1To-G9-EIl"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="qLT-Pt-oIg"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J4s-Yc-0tQ" secondAttribute="bottom" id="2A9-Cw-mfV"/>
+                            <constraint firstItem="J4s-Yc-0tQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5ha-8J-PWr"/>
+                            <constraint firstItem="J4s-Yc-0tQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7ub-5y-835"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J4s-Yc-0tQ" secondAttribute="trailing" id="f8n-ix-fyj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblJoke" destination="twu-im-ggI" id="2ds-ou-ou3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

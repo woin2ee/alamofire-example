@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  AlamofireExample
 //
 //  Created by Jaewon on 2022/06/09.
@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet weak var lblJoke: UILabel!
     
     override func viewDidLoad() {
