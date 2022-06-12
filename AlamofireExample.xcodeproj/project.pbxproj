@@ -54,7 +54,7 @@
 		E83896A5285196A500E1719C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E83896A7285196A700E1719C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E83896AA285196A700E1719C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E83896AC285196A700E1719C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83896AC285196A700E1719C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AlamofireExample/Resource/Info.plist; sourceTree = SOURCE_ROOT; };
 		E83896B1285196A700E1719C /* AlamofireExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83896B5285196A700E1719C /* AlamofireExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleTests.swift; sourceTree = "<group>"; };
 		E83896BB285196A700E1719C /* AlamofireExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +145,6 @@
 				E85A55E92853370E007FB2AD /* Presentation */,
 				E85A55E728531D62007FB2AD /* Data */,
 				E85A55EB28534D2F007FB2AD /* Resource */,
-				E83896AC285196A700E1719C /* Info.plist */,
 			);
 			path = AlamofireExample;
 			sourceTree = "<group>";
@@ -206,6 +205,7 @@
 			children = (
 				E83896A7285196A700E1719C /* Assets.xcassets */,
 				E83896A9285196A700E1719C /* LaunchScreen.storyboard */,
+				E83896AC285196A700E1719C /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -632,7 +632,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AlamofireExample/Info.plist;
+				INFOPLIST_FILE = AlamofireExample/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Home;
@@ -663,7 +663,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AlamofireExample/Info.plist;
+				INFOPLIST_FILE = AlamofireExample/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Home;
