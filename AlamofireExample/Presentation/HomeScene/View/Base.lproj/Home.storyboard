@@ -33,7 +33,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Random Joke!"/>
                                                 <connections>
-                                                    <action selector="updateJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbf-Wx-DPH"/>
+                                                    <action selector="randomJokeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAE-44-dy2"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twu-im-ggI">
