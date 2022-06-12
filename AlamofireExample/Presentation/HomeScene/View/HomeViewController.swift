@@ -14,11 +14,12 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblJoke.text = viewModel.earlyContent
+        viewModel.content.bind {
+            self.lblJoke.text = $0
+        }
     }
     
     @IBAction func randomJokeButtonClicked(_ sender: UIButton) {
         viewModel.didUpdateContent()
-        lblJoke.text = viewModel.content
     }
 }

@@ -12,8 +12,7 @@ protocol HomeViewModelInput {
 }
 
 protocol HomeViewModelOutput {
-    var earlyContent: String { get }
-    var content: String { get }
+    var content: Observable { get }
 }
 
 protocol HomeViewModel: HomeViewModelInput, HomeViewModelOutput {}
@@ -26,12 +25,11 @@ final class DefaultHomeViewModel: HomeViewModel {
     
     func didUpdateContent() {
         repository.fetchRandomJoke { response in
-            self.content = response?.joke.content ?? ""
+            self.content.value = response?.joke.content ?? ""
         }
     }
     
     // MARK: - Output
     
-    let earlyContent = "Do you wanna Joke?"
-    var content: String = ""
+    var content: Observable = .init(value: "Do you wanna Joke?")
 }

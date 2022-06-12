@@ -20,6 +20,7 @@
 		E83896C0285196A700E1719C /* AlamofireExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896BF285196A700E1719C /* AlamofireExampleUITests.swift */; };
 		E83896C2285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */; };
 		E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */; };
+		E8E9F7EC285646FB001CC5C8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9F7EB285646FB001CC5C8 /* Observable.swift */; };
 		E8F13805285629A200725ED7 /* DefaultHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F13804285629A200725ED7 /* DefaultHomeViewModel.swift */; };
 		E8F1380828562D9A00725ED7 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F1380728562D9A00725ED7 /* JokeRepository.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponseDTO.swift; sourceTree = "<group>"; };
 		E8E9F7E8285645C0001CC5C8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E9F7EB285646FB001CC5C8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		E8F13804285629A200725ED7 /* DefaultHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewModel.swift; sourceTree = "<group>"; };
 		E8F1380728562D9A00725ED7 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
 		ED736D8BE09192BDB8FB2F7B /* Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-AlamofireExample-AlamofireExampleUITests/Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				E85A55EA28533716007FB2AD /* HomeScene */,
+				E8E9F7EA285646F1001CC5C8 /* Utils */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -213,6 +216,14 @@
 				E8E9F7E8285645C0001CC5C8 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8E9F7EA285646F1001CC5C8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8E9F7EB285646FB001CC5C8 /* Observable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E8F138022856297400725ED7 /* View */ = {
@@ -498,6 +509,7 @@
 				E83896A3285196A500E1719C /* HomeViewController.swift in Sources */,
 				E838969F285196A500E1719C /* AppDelegate.swift in Sources */,
 				E83896A1285196A500E1719C /* SceneDelegate.swift in Sources */,
+				E8E9F7EC285646FB001CC5C8 /* Observable.swift in Sources */,
 				E8F13805285629A200725ED7 /* DefaultHomeViewModel.swift in Sources */,
 				E8F1380828562D9A00725ED7 /* JokeRepository.swift in Sources */,
 				E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */,
