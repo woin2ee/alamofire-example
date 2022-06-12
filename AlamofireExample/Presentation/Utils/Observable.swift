@@ -7,24 +7,21 @@
 
 import Foundation
 
-class Observable {
-    // 값이 바뀔때마다 실행될 클로저
-    var listener: ((String) -> Void)?
+class Observable<T> {
+    private var listener: ((T) -> Void)?
     
-    // raw 값
-    var value: String {
+    var value: T {
         didSet {
             listener?(value)
         }
     }
     
-    // Observing 을 위한 값 초기화
-    init(value: String) {
+    init(_ value: T) {
         self.value = value
     }
     
-    // 클로저를 binding
-    func bind(_ closure: @escaping (String) -> Void) {
+    func bind(_ closure: @escaping (T) -> Void) {
         listener = closure
+        closure(value)
     }
 }

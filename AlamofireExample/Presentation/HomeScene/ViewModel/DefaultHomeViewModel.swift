@@ -12,7 +12,7 @@ protocol HomeViewModelInput {
 }
 
 protocol HomeViewModelOutput {
-    var content: Observable { get }
+    var content: Observable<String> { get }
 }
 
 protocol HomeViewModel: HomeViewModelInput, HomeViewModelOutput {}
@@ -31,5 +31,5 @@ final class DefaultHomeViewModel: HomeViewModel {
     
     // MARK: - Output
     
-    var content: Observable = .init(value: "Do you wanna Joke?")
+    var content: Observable<String> = Observable("")
 }

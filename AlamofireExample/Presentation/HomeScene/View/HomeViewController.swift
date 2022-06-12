@@ -14,9 +14,15 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.content.bind {
-            self.lblJoke.text = $0
-        }
+        bind(to: viewModel)
+    }
+    
+    private func bind(to viewModel: HomeViewModel) {
+        viewModel.content.bind { self.updateLblJoke($0) }
+    }
+    
+    private func updateLblJoke(_ content: String) {
+        self.lblJoke.text = content
     }
     
     @IBAction func randomJokeButtonClicked(_ sender: UIButton) {
