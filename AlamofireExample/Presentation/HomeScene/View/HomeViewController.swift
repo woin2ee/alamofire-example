@@ -10,7 +10,12 @@ import UIKit
 final class HomeViewController: UIViewController {
     @IBOutlet private weak var lblJoke: UILabel!
     
-    private let viewModel = DefaultHomeViewModel()
+    private let viewModel: HomeViewModel
+    
+    required init?(coder: NSCoder) {
+        self.viewModel = DefaultHomeViewModel(jokeRepository: DefaultJokeRepository())
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

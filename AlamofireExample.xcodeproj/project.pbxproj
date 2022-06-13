@@ -20,9 +20,13 @@
 		E83896C0285196A700E1719C /* AlamofireExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896BF285196A700E1719C /* AlamofireExampleUITests.swift */; };
 		E83896C2285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */; };
 		E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */; };
+		E89126C828571AE0008B29A9 /* StubJokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89126C728571AE0008B29A9 /* StubJokeRepository.swift */; };
+		E89126CA28571B5D008B29A9 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89126C928571B5D008B29A9 /* HomeViewModelTests.swift */; };
+		E89126CF28571C46008B29A9 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89126CE28571C46008B29A9 /* JokeRepository.swift */; };
+		E89126D428571FA6008B29A9 /* JokeResponseDTO+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89126D328571FA6008B29A9 /* JokeResponseDTO+Mock.swift */; };
 		E8E9F7EC285646FB001CC5C8 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E9F7EB285646FB001CC5C8 /* Observable.swift */; };
 		E8F13805285629A200725ED7 /* DefaultHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F13804285629A200725ED7 /* DefaultHomeViewModel.swift */; };
-		E8F1380828562D9A00725ED7 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F1380728562D9A00725ED7 /* JokeRepository.swift */; };
+		E8F1380828562D9A00725ED7 /* DefaultJokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F1380728562D9A00725ED7 /* DefaultJokeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +67,14 @@
 		E83896BF285196A700E1719C /* AlamofireExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleUITests.swift; sourceTree = "<group>"; };
 		E83896C1285196A700E1719C /* AlamofireExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E85A55E528531D4C007FB2AD /* JokeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeResponseDTO.swift; sourceTree = "<group>"; };
+		E89126C728571AE0008B29A9 /* StubJokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubJokeRepository.swift; sourceTree = "<group>"; };
+		E89126C928571B5D008B29A9 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		E89126CE28571C46008B29A9 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
+		E89126D328571FA6008B29A9 /* JokeResponseDTO+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokeResponseDTO+Mock.swift"; sourceTree = "<group>"; };
 		E8E9F7E8285645C0001CC5C8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8E9F7EB285646FB001CC5C8 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		E8F13804285629A200725ED7 /* DefaultHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewModel.swift; sourceTree = "<group>"; };
-		E8F1380728562D9A00725ED7 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
+		E8F1380728562D9A00725ED7 /* DefaultJokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultJokeRepository.swift; sourceTree = "<group>"; };
 		ED736D8BE09192BDB8FB2F7B /* Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-AlamofireExample-AlamofireExampleUITests/Pods-AlamofireExample-AlamofireExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FB4E7D8F686499A399756CDA /* Pods_AlamofireExample_AlamofireExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireExample_AlamofireExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +157,7 @@
 			children = (
 				E85A55E8285336F9007FB2AD /* Application */,
 				E85A55E92853370E007FB2AD /* Presentation */,
+				E89126CB28571BEA008B29A9 /* Domain */,
 				E85A55E728531D62007FB2AD /* Data */,
 				E85A55EB28534D2F007FB2AD /* Resources */,
 			);
@@ -158,6 +167,9 @@
 		E83896B4285196A700E1719C /* AlamofireExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				E89126C628571AB7008B29A9 /* ViewModel */,
+				E89126D528571FB5008B29A9 /* Repositories */,
+				E89126D228571F82008B29A9 /* DataMapping */,
 				E83896B5285196A700E1719C /* AlamofireExampleTests.swift */,
 			);
 			path = AlamofireExampleTests;
@@ -218,6 +230,54 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E89126C628571AB7008B29A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E89126C928571B5D008B29A9 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E89126CB28571BEA008B29A9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E89126CC28571BFA008B29A9 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E89126CC28571BFA008B29A9 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				E89126CD28571C10008B29A9 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		E89126CD28571C10008B29A9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E89126CE28571C46008B29A9 /* JokeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E89126D228571F82008B29A9 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				E89126D328571FA6008B29A9 /* JokeResponseDTO+Mock.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		E89126D528571FB5008B29A9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E89126C728571AE0008B29A9 /* StubJokeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		E8E9F7EA285646F1001CC5C8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +306,7 @@
 		E8F1380628562CD400725ED7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				E8F1380728562D9A00725ED7 /* JokeRepository.swift */,
+				E8F1380728562D9A00725ED7 /* DefaultJokeRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -506,12 +566,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89126CF28571C46008B29A9 /* JokeRepository.swift in Sources */,
 				E83896A3285196A500E1719C /* HomeViewController.swift in Sources */,
 				E838969F285196A500E1719C /* AppDelegate.swift in Sources */,
 				E83896A1285196A500E1719C /* SceneDelegate.swift in Sources */,
 				E8E9F7EC285646FB001CC5C8 /* Observable.swift in Sources */,
 				E8F13805285629A200725ED7 /* DefaultHomeViewModel.swift in Sources */,
-				E8F1380828562D9A00725ED7 /* JokeRepository.swift in Sources */,
+				E8F1380828562D9A00725ED7 /* DefaultJokeRepository.swift in Sources */,
 				E85A55E628531D4C007FB2AD /* JokeResponseDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +582,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E83896B6285196A700E1719C /* AlamofireExampleTests.swift in Sources */,
+				E89126D428571FA6008B29A9 /* JokeResponseDTO+Mock.swift in Sources */,
+				E89126C828571AE0008B29A9 /* StubJokeRepository.swift in Sources */,
+				E89126CA28571B5D008B29A9 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

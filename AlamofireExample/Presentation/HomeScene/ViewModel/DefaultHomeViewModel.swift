@@ -19,7 +19,11 @@ protocol HomeViewModel: HomeViewModelInput, HomeViewModelOutput {}
 
 final class DefaultHomeViewModel: HomeViewModel {
     
-    private let repository = JokeRepository()
+    private let jokeRepository: JokeRepository
+    
+    init(jokeRepository: JokeRepository) {
+        self.jokeRepository = jokeRepository
+    }
     
     // MARK: - Output
     
@@ -28,7 +32,7 @@ final class DefaultHomeViewModel: HomeViewModel {
     // MARK: - Input
     
     func didUpdateContent() {
-        repository.fetchRandomJoke { response in
+        jokeRepository.fetchRandomJoke { response in
             self.content.value = response?.joke.content ?? ""
         }
     }
