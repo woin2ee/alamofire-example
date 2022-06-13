@@ -18,7 +18,7 @@ final class HomeViewController: UIViewController {
     }
     
     private func bind(to viewModel: HomeViewModel) {
-        viewModel.content.bind { self.updateLblJoke($0) }
+        viewModel.content.bind { [weak self] in self?.updateLblJoke($0) }
     }
     
     private func updateLblJoke(_ content: String) {

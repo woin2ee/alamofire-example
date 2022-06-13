@@ -21,6 +21,10 @@ final class DefaultHomeViewModel: HomeViewModel {
     
     private let repository = JokeRepository()
     
+    // MARK: - Output
+    
+    var content: Observable<String> = Observable("")
+    
     // MARK: - Input
     
     func didUpdateContent() {
@@ -28,8 +32,4 @@ final class DefaultHomeViewModel: HomeViewModel {
             self.content.value = response?.joke.content ?? ""
         }
     }
-    
-    // MARK: - Output
-    
-    var content: Observable<String> = Observable("")
 }
